@@ -1,0 +1,9 @@
+{
+    "clientID":"d467efb1-1d11-49ba-8bc0-d36c25e69ac6",
+    "clientSecret":"KshpQe/B1Pel1odQnqLxtBlX8Ea8luz7V8obKBDWSdo=",
+    "callbackUri":"http://localhost:3000/callback",
+    "resource":"https://manage.office.com",
+    "tenant":"d42ae020-d9b6-4a72-94b1-c445ad93445f",
+    "dbUrl":"mongodb://o365db:xb6hnZVy904W54yJfTrXvAX7yaa2DXAD5P3IoISSva77y2qJpkkzjkP10jjgmtKD4bphKAdeVLuKK04niLr0FQ==@o365db.documents.azure.com:10255/?ssl=true&replicaSet=globaldb",
+    "webhookCB":"https://o365-project.azurewebsites.net/webhook"
+}

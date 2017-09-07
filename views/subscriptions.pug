@@ -1,0 +1,27 @@
+extends ../node_modules/jade-bootstrap/_bootstrap
+
+block body
+  +panel-primary("Subscription")
+    form(action = '', method = 'post')
+      p
+        span Content type : 
+        select(name='contentType') 
+          each type, i in contentTypes
+            option(value=type) #{type}
+     
+      p Start/Stop Subscription : 
+        button(type='submit', name='action', value='start').btn.btn-default Start
+        button(type='submit', name='action', value='stop').btn.btn-default Stop 
+      p List available content : 
+        button(type='submit', name='action', value='list_content').btn.btn-default List
+      p List notifications status: 
+        button(type='submit', name='action', value='list_notifications').btn.btn-default List
+      p Subscriptions Status(for all concent type): 
+        button(type='submit', name='action', value='list').btn.btn-default List
+
+  +panel-info("Message")
+    p
+      ul
+        if msg
+          each val in values ? values : msg
+            li= JSON.stringify(val)
